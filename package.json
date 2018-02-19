@@ -1,0 +1,19 @@
+{
+  "name": "nodeauthexample",
+  "version": "1.0.0",
+  "description": "\u0016Authorization Example with Mongoose and Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Tiritilli",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.15.1"
+  }
+}
