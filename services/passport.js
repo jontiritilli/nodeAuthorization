@@ -13,7 +13,7 @@ const localLogin = new localStrategy(localOptions, (email, password, done)=> {
     User.findOne({email}, (err, user)=> {
         if(err) return done(err)
         if(!user) return done(null, false);
-        user.comparePassword(password, (err, isMatch) => {
+        user.comparePasswords(password, (err, isMatch) => {
             //check if error
             if(err) return done(err);
             //check if boolean is false
@@ -30,7 +30,7 @@ const jwtOptions = {
 }
 
 const jwtLogin = new jwtStrategy(jwtOptions, (payload, done)=>{
-    user.findById(payload.uid, (err, user) => {
+    User.findById(payload.uid, (err, user) => {
         if(err) return done(err);
         if(!user) return done(null, false);
         done(null, user);

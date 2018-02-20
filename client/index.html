@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="main.js"></script>
+
+    <title>Node Auth Test</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card grey lighten-2">
+            <div class="card-content">
+                <form>
+                    <h3>Sign Up</h3>
+                    <label>Email</label>
+                    <input id='email' name='email' type="text">
+                    <label>First Name</label>
+                    <input id='givenName' name='givenName' type="text">
+                    <label>Last Name</label>
+                    <input id='familyName' name='familyName' type="text">
+                    <label>Password</label>
+                    <input id='password' name='password' type="password"/>
+                    <button id='register' class='btn amber darken-3' type='button'>Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="card grey lighten-2">
+            <div class="card-content">
+                <form>
+                    <h3>Sign In</h3>
+                    <label>Email</label>
+                    <input id='email-signIn' name='email' type="text">
+                    <label>Password</label>
+                    <input id='password-signIn' name='password' type="password" />
+                    <button id='signIn' class='btn amber darken-3' type='button'>Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="center-align">
+        <button id='get-user' class='btn red darken-3 center-align'>Get User Name</button>
+    </div>
+    <br><br><br>
+</body>
+</html>

@@ -11,7 +11,10 @@ module.exports = app => {
     app.post('/get-user', requireAuth, (req, res)=>{
         const user = {
             name: req.user.givenName + ' ' + req.user.familyName,
-
         }
+        res.send(user);
+    })
+    app.post('/another-route', requireAuth, (req, res) => {
+        res.send('testing this secret message');
     })
 }

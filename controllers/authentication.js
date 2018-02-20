@@ -15,7 +15,7 @@ function token (user) {
 exports.signup = (req, res, next) => {
     const { email, password, givenName, familyName } = req.body;
 
-    if(!email || password || givenName || familyName){
+    if(!email || !password || !givenName || !familyName){
         const errors = [];
         if (!email) {
             errors.push('no email provided')
